@@ -11,6 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var toppers: UIImageView!
+  
+  
+    
+    @IBOutlet weak var bottomers: UIImageView!
+    
     var spaces: [[Player?]] =  [
     
             [nil,nil,nil],
@@ -29,6 +35,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     var currentPlayer: Player = .One
 
@@ -101,6 +108,7 @@ class ViewController: UIViewController {
         }
         
     }
-
+    
+   
 }
 
