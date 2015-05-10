@@ -50,8 +50,8 @@ enum Player {
             }
             
             
-            var smallCircleREct = CGRectInset(rect, 40, 40)
-            CGContextFillEllipseInRect(context, smallCircleREct)
+            var smallCircleRect = CGRectInset(rect, 40, 40)
+            CGContextFillEllipseInRect(context, smallCircleRect)
         }
         
         

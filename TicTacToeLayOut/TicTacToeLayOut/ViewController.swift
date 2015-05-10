@@ -11,11 +11,6 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var toppers: UIImageView!
-  
-  
-    
-    @IBOutlet weak var bottomers: UIImageView!
     
     var spaces: [[Player?]] =  [
     
@@ -37,7 +32,11 @@ class ViewController: UIViewController {
     }
     
     
-    var currentPlayer: Player = .One
+    
+    @IBOutlet weak var scoreCard: UIButton!
+    
+  
+        var currentPlayer: Player = .One
 
     @IBAction func buttonPressed(sender: TicButton) {
         
