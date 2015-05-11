@@ -169,14 +169,11 @@
                                     <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HFQ-np-xsx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lk8-So-d8y">
-                                <rect key="frame" x="10" y="410" width="300" height="138"/>
-                                <state key="normal" title="Button" image="Image-1">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="5bX-HG-her">
-                                <rect key="frame" x="36" y="36" width="240" height="78"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tictactoeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="vAv-eC-Wwh">
+                                <rect key="frame" x="40" y="17" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tictactoeCircles" translatesAutoresizingMaskIntoConstraints="NO" id="7iu-to-JQU">
+                                <rect key="frame" x="41" y="420" width="240" height="128"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -184,8 +181,8 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
-                        <outlet property="bottomBanner" destination="lk8-So-d8y" id="93m-6U-R4c"/>
-                        <outlet property="topBanner" destination="kh9-bI-dsS" id="s1q-CN-PjA"/>
+                        <outlet property="bottomBanner" destination="7iu-to-JQU" id="FBm-UZ-D7u"/>
+                        <outlet property="topBanner" destination="vAv-eC-Wwh" id="pvg-a8-0zN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -194,7 +191,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="374" height="66"/>
-        <image name="Image-1" width="444" height="247"/>
+        <image name="tictactoeCircles" width="444" height="247"/>
+        <image name="tictactoeLogo" width="374" height="66"/>
     </resources>
 </document>

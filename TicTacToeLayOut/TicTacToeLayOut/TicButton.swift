@@ -33,11 +33,9 @@ enum Player {
         
         UIColor.lightGrayColor().set()
         
-        
         CGContextSetLineWidth(context, 1)
         
         CGContextStrokeEllipseInRect(context, insetRect)
-        
         
         if let playerUnwrapped = player {
             
@@ -50,7 +48,7 @@ enum Player {
             }
             
             
-            var smallCircleRect = CGRectInset(rect, 40, 40)
+            var smallCircleRect = CGRectInset(rect, 25, 25)
             CGContextFillEllipseInRect(context, smallCircleRect)
         }
         

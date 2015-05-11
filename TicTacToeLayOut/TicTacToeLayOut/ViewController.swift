@@ -11,10 +11,10 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var topBanner: UIView!
+    @IBOutlet var topBanner: UIImageView!
+  
     
-    
-    @IBOutlet weak var bottomBanner: UIButton!
+    @IBOutlet var bottomBanner: UIImageView!
     
     var spaces: [[Player?]] =  [
     
