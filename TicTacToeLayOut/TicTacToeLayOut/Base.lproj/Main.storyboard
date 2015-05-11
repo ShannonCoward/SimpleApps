@@ -169,27 +169,28 @@
                                     <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HFQ-np-xsx"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="woz-7u-91S">
-                                <rect key="frame" x="22" y="37" width="276" height="76"/>
-                            </imageView>
                             <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lk8-So-d8y">
                                 <rect key="frame" x="10" y="410" width="300" height="138"/>
                                 <state key="normal" title="Button" image="Image-1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="5bX-HG-her">
+                                <rect key="frame" x="36" y="36" width="240" height="78"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
-                        <outlet property="scoreCard" destination="lk8-So-d8y" id="Pks-ar-9xP"/>
+                        <outlet property="bottomBanner" destination="lk8-So-d8y" id="93m-6U-R4c"/>
+                        <outlet property="topBanner" destination="kh9-bI-dsS" id="s1q-CN-PjA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="198" y="272"/>
+            <point key="canvasLocation" x="194" y="265"/>
         </scene>
     </scenes>
     <resources>

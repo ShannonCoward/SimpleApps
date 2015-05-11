@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var topBanner: UIView!
+    
+    
+    @IBOutlet weak var bottomBanner: UIButton!
     
     var spaces: [[Player?]] =  [
     
@@ -32,10 +36,6 @@ class ViewController: UIViewController {
     }
     
     
-    
-    @IBOutlet weak var scoreCard: UIButton!
-    
-  
         var currentPlayer: Player = .One
 
     @IBAction func buttonPressed(sender: TicButton) {
