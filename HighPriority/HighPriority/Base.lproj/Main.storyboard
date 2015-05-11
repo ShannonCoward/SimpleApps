@@ -33,6 +33,7 @@
                                         <constraint firstAttribute="height" constant="30" id="hUN-in-Yfk"/>
                                     </constraints>
                                     <state key="normal" title="High">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <variation key="default">
@@ -47,6 +48,9 @@
                                             <include reference="hUN-in-Yfk"/>
                                         </mask>
                                     </variation>
+                                    <connections>
+                                        <action selector="highButton:" destination="qKd-f6-BRV" eventType="touchUpInside" id="FCL-4L-mAC"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyv-Fz-fXe">
                                     <rect key="frame" x="240" y="118" width="46" height="30"/>
@@ -58,6 +62,7 @@
                                         </constraint>
                                     </constraints>
                                     <state key="normal" title="Medium">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <variation key="default">
@@ -72,10 +77,13 @@
                                             <include reference="if0-aN-GBI"/>
                                         </mask>
                                     </variation>
+                                    <connections>
+                                        <action selector="mediumButton:" destination="qKd-f6-BRV" eventType="touchUpInside" id="MAc-AU-na6"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-aL-8VF">
                                     <rect key="frame" x="361" y="113" width="46" height="30"/>
-                                    <color key="backgroundColor" red="0.96938427676376815" green="1" blue="0.028078835944108538" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.25024699919999999" green="0.43218778689999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="120" id="FCE-Da-Ug8">
                                             <variation key="widthClass=compact" constant="100"/>
@@ -83,6 +91,7 @@
                                         <constraint firstAttribute="height" constant="30" id="osW-6Z-6JA"/>
                                     </constraints>
                                     <state key="normal" title="Low">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <variation key="default">
@@ -97,6 +106,9 @@
                                             <include reference="osW-6Z-6JA"/>
                                         </mask>
                                     </variation>
+                                    <connections>
+                                        <action selector="lowButton:" destination="qKd-f6-BRV" eventType="touchUpInside" id="WRX-Ud-SsB"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mo-au-PyL">
                                     <rect key="frame" x="260" y="71" width="46" height="30"/>
@@ -145,11 +157,11 @@
                                     <exclude reference="0Mo-au-PyL"/>
                                 </mask>
                                 <mask key="constraints">
+                                    <exclude reference="1kz-eO-qt7"/>
+                                    <exclude reference="K2y-XP-qik"/>
                                     <exclude reference="3BV-Zh-Mvb"/>
                                     <exclude reference="Wj5-0u-whF"/>
                                     <exclude reference="aHy-57-Z2D"/>
-                                    <exclude reference="1kz-eO-qt7"/>
-                                    <exclude reference="K2y-XP-qik"/>
                                     <exclude reference="3Q7-Ne-yWG"/>
                                     <exclude reference="fjA-H2-SHx"/>
                                     <exclude reference="uAJ-ra-DGm"/>
@@ -168,11 +180,11 @@
                                     <include reference="0Mo-au-PyL"/>
                                 </mask>
                                 <mask key="constraints">
+                                    <include reference="1kz-eO-qt7"/>
+                                    <include reference="K2y-XP-qik"/>
                                     <include reference="3BV-Zh-Mvb"/>
                                     <include reference="Wj5-0u-whF"/>
                                     <include reference="aHy-57-Z2D"/>
-                                    <include reference="1kz-eO-qt7"/>
-                                    <include reference="K2y-XP-qik"/>
                                     <include reference="3Q7-Ne-yWG"/>
                                     <include reference="fjA-H2-SHx"/>
                                     <include reference="uAJ-ra-DGm"/>

@@ -21,6 +21,24 @@ enum Priority {
 
 class ListTableViewController: UITableViewController {
     
+    @IBAction func highButton(sender: AnyObject) {
+        
+        priorityLevel = 0
+    }
+    
+    @IBAction func mediumButton(sender: AnyObject) {
+        
+        priorityLevel = 1
+    }
+    
+    
+    @IBAction func lowButton(sender: AnyObject) {
+        
+        priorityLevel = 2
+    }
+    
+    var priorityLevel = 0
+    
     
     // [String]
     // [String:String] <---- Dictionary  //array of dictionaries
@@ -40,7 +58,7 @@ class ListTableViewController: UITableViewController {
         [
             "name" : "Get Rat Food",
             "timecreated" : NSDate(),
-            "priority" : 2,
+            "priority" : 0,
             "completed" : false
             
     
@@ -60,7 +78,7 @@ class ListTableViewController: UITableViewController {
         
             "name" : itemName.text,
             "timecreated" : NSDate(),
-            "priority" : 2,
+            "priority" : priorityLevel,
             "completed" : false
         
         
