@@ -23,12 +23,16 @@ class ListTableViewController: UITableViewController {
     
     @IBAction func highButton(sender: AnyObject) {
         
+
+        
         priorityLevel = 0
+        
     }
     
     @IBAction func mediumButton(sender: AnyObject) {
         
         priorityLevel = 1
+        
     }
     
     
@@ -97,6 +101,8 @@ class ListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
