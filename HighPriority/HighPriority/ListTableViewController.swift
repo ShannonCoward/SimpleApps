@@ -73,10 +73,10 @@ class ListTableViewController: UITableViewController {
     
     
     
-    
     @IBOutlet var itemName: UITextField!
     
     @IBAction func createItem(sender: AnyObject) {
+        
         
         var itemInfo = [
         
@@ -94,6 +94,8 @@ class ListTableViewController: UITableViewController {
         
 //        println(listItems.count)
         
+        
+        
     }
   
     
@@ -101,7 +103,6 @@ class ListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
 
         // Uncomment the following line to preserve selection between presentations

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BQh-PK-ahv">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Github Friends-->
+        <scene sceneID="TZn-Kc-Y56">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvT-Rk-j2z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="pJX-Jf-TeG" customClass="FriendsTableViewController" customModule="GithubFriends" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="113" sectionHeaderHeight="22" sectionFooterHeight="22" id="uAk-xn-Vlr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="GDS-HV-mSh">
+                            <rect key="frame" x="0.0" y="64" width="600" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6xj-ag-dZB">
+                                    <rect key="frame" x="10" y="10" width="491" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0W9-3o-QfD">
+                                    <rect key="frame" x="511" y="10" width="79" height="40"/>
+                                    <color key="backgroundColor" red="0.52485382642930567" green="0.52909198311322636" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="79" id="2uf-3i-wB5"/>
+                                    </constraints>
+                                    <state key="normal" title="Add Friend">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="addFriend:" destination="pJX-Jf-TeG" eventType="touchUpInside" id="bGD-jM-6ef"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="6xj-ag-dZB" firstAttribute="leading" secondItem="GDS-HV-mSh" secondAttribute="leading" constant="10" id="0ab-sZ-kBz"/>
+                                <constraint firstAttribute="bottom" secondItem="6xj-ag-dZB" secondAttribute="bottom" constant="10" id="KDK-Ni-WGc"/>
+                                <constraint firstAttribute="trailing" secondItem="0W9-3o-QfD" secondAttribute="trailing" constant="10" id="Pfh-11-HUe"/>
+                                <constraint firstItem="0W9-3o-QfD" firstAttribute="top" secondItem="GDS-HV-mSh" secondAttribute="top" constant="10" id="bFC-rF-OCS"/>
+                                <constraint firstAttribute="bottom" secondItem="0W9-3o-QfD" secondAttribute="bottom" constant="10" id="lYr-YD-K3R"/>
+                                <constraint firstItem="0W9-3o-QfD" firstAttribute="leading" secondItem="6xj-ag-dZB" secondAttribute="trailing" constant="10" id="nP2-F5-IJj"/>
+                                <constraint firstItem="6xj-ag-dZB" firstAttribute="top" secondItem="GDS-HV-mSh" secondAttribute="top" constant="10" id="rZ6-nb-U0c"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendCell" rowHeight="113" id="NZi-vl-m4A" customClass="ProfilePicTableViewCell" customModule="GithubFriends" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NZi-vl-m4A" id="tIq-40-69u">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wJH-Jv-3DU">
+                                            <rect key="frame" x="16" y="8" width="89" height="75"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test this is a long name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9e-zI-FFg">
+                                            <rect key="frame" x="122" y="8" width="181" height="35"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vd7-6t-KWW">
+                                            <rect key="frame" x="133" y="53" width="45" height="30"/>
+                                            <state key="normal" title="Repos">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9g-Gi-j8E">
+                                            <rect key="frame" x="257" y="53" width="36" height="30"/>
+                                            <state key="normal" title="Gists">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="profileNameLabel" destination="o9e-zI-FFg" id="fma-mm-xQc"/>
+                                    <outlet property="profilePic" destination="wJH-Jv-3DU" id="b5o-cG-WYk"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="pJX-Jf-TeG" id="4UU-hA-sWT"/>
+                            <outlet property="delegate" destination="pJX-Jf-TeG" id="C7d-Z0-k1W"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Github Friends" id="dvl-Qb-8h4"/>
+                    <connections>
+                        <outlet property="friendNameField" destination="6xj-ag-dZB" id="1XI-IG-mcH"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="770" y="146"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3I1-8c-A1y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BQh-PK-ahv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="INr-Pd-Gfj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pJX-Jf-TeG" kind="relationship" relationship="rootViewController" id="10z-II-1am"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tF-3T-DJ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="146"/>
+        </scene>
+    </scenes>
+</document>
