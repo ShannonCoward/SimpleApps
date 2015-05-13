@@ -192,12 +192,17 @@ class FriendsTableViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
+        if segue.identifier == "reposSegue" {
+        
         var reposTVC = segue.destinationViewController
         as! ReposTableViewController
+        
         
         var repoButton = sender as! UIButton
         
         reposTVC.friendInfo = friends[repoButton.tag]
+            
+        }
         
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
