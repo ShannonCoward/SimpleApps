@@ -69,25 +69,19 @@ class FriendsTableViewController: UITableViewController {
         
         // 'https://api.github.com/users/whatever?client_id=xxxx&client_secret=yyyy'
         
-        let endpoint = "https://api.github.com/users/\(friendNameField.text)?client_id=18c2e67eaf44f4a60b76&client_secret=5528dd41089fd0a5de62e7927b849075b65463a0"
+        let endpoint = "https://api.github.com/users/\(friendNameField.text)"
         
-        if let url = NSURL(string: endpoint) {
+        println(endpoint)
+        
+        if let friendInfo = GithubRequest.getInfoWithEnpoint(endpoint) as? [String:AnyObject]{
+        
+            println(friendInfo)
             
-            let request = NSURLRequest(URL: url)
-            
-            if let data = NSURLConnection.sendSynchronousRequest(request, returningResponse: nil, error: nil) {
-                
-                if let friendInfo = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as? [String: AnyObject]{
-                
-                friends.insert(friendInfo, atIndex: 0)
-                    
-                tableView.reloadData()
-                    
-            }
-            
+            friends.insert(friendInfo, atIndex: 0)
+            tableView.reloadData()
         }
-            
-     }
+        
+       
         
         friendNameField.text = ""
         
@@ -116,26 +110,34 @@ class FriendsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("friendCell", forIndexPath: indexPath) as! ProfilePicTableViewCell
+        
+        
 
-        // This creates a label
-//        cell.textLabel?.text = friends[indexPath.row]["name"] as? String
+//        // This creates a label
+////        cell.textLabel?.text = friends[indexPath.row]["name"] as? String
+//        
+//        // Access the new property of ProfilePicTableViewCell
+//        cell.profileNameLabel.text = friends[indexPath.row]["name"] as? String
+//        
+//        // Gets the avatar URL for the friend
+//        let avatarURL = NSURL(string: friends[indexPath.row]["avatar_url"]! as! String)
+//        
+//        // Gets the image data
+//        let imageData = NSData(contentsOfURL: avatarURL!)
+//        
+//        // Create an image from the data
+//        let image = UIImage(data: imageData!)
+//        
+//        cell.profilePic!.image = image
+////        cell.imageView!.image = image
         
-        // Access the new property of ProfilePicTableViewCell
-        cell.profileNameLabel.text = friends[indexPath.row]["name"] as? String
         
-        // Gets the avatar URL for the friend
-        let avatarURL = NSURL(string: friends[indexPath.row]["avatar_url"]! as! String)
+         // Configure the cell...
         
-        // Gets the image data
-        let imageData = NSData(contentsOfURL: avatarURL!)
+        cell.friendIndex = indexPath.row
         
-        // Create an image from the data
-        let image = UIImage(data: imageData!)
+        cell.friendInfo = friends[indexPath.row]
         
-        cell.profilePic!.image = image
-//        cell.imageView!.image = image
-        
-        // Configure the cell...
 
         return cell
     }
@@ -161,6 +163,8 @@ class FriendsTableViewController: UITableViewController {
             
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
+            
+            
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
@@ -181,14 +185,23 @@ class FriendsTableViewController: UITableViewController {
     }
     */
 
-    /*
+   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        var reposTVC = segue.destinationViewController
+        as! ReposTableViewController
+        
+        var repoButton = sender as! UIButton
+        
+        reposTVC.friendInfo = friends[repoButton.tag]
+        
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
     }
-    */
+
 
 }
