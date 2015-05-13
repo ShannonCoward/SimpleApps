@@ -92,10 +92,51 @@
                     <navigationItem key="navigationItem" title="Github Friends" id="dvl-Qb-8h4"/>
                     <connections>
                         <outlet property="friendNameField" destination="6xj-ag-dZB" id="1XI-IG-mcH"/>
+                        <segue destination="M0J-ZO-BDt" kind="push" id="xJb-kY-AsZ"/>
                     </connections>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="770" y="146"/>
+        </scene>
+        <!--Friends Table View Controller-->
+        <scene sceneID="gmp-ut-duo">
+            <objects>
+                <tableViewController id="M0J-ZO-BDt" customClass="FriendsTableViewController" customModule="GithubFriends" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="MLc-SP-Yld">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="FXK-8U-UTD">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FXK-8U-UTD" id="5jR-g9-yGZ">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendCell" rowHeight="113" id="seC-UO-zXP" customClass="ProfilePicTableViewCell" customModule="GithubFriends" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="seC-UO-zXP" id="OkT-Qp-Zjh">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="SampleApp" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l8O-SF-OnD">
+                                            <rect key="frame" x="26" y="0.0" width="97" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="M0J-ZO-BDt" id="CP4-AI-FmR"/>
+                            <outlet property="delegate" destination="M0J-ZO-BDt" id="1xc-YF-By6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="J71-Ie-fPu"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbO-x3-YgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1441" y="146"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3I1-8c-A1y">
