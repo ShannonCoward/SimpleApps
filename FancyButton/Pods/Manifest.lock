@@ -1,0 +1,10 @@
+PODS:
+  - ZFRippleButton (0.2)
+
+DEPENDENCIES:
+  - ZFRippleButton (~> 0.2)
+
+SPEC CHECKSUMS:
+  ZFRippleButton: 22118e02b6dd0cbe1dc85aa666579c30fc817021
+
+COCOAPODS: 0.37.1
