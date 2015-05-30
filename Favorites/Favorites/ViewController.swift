@@ -38,19 +38,34 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
+        
         favoritesTableView.delegate = self
         favoritesTableView.dataSource = self
         
         let query = PFQuery(className: "Favorites")
         
         query.orderByDescending("CreatedAt")
-
+        
+    
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             
             self.myFavorites = objects as! [PFObject]
             self.favoritesTableView.reloadData()
             
             
+        }
+        
+        var currentUser = PFUser.currentUser()
+        if currentUser != nil {
+            
+            let query = PFQuery(className: "user")
+            
+            query.delete(sender: "user"∫)
+            
+            // Do stuff with the user
+        } else {
+            // Show the signup or login screen
         }
         
     }

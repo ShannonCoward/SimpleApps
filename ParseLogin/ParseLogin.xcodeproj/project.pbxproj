@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04F0D6451B17F04300D6F209 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0D6441B17F04300D6F209 /* AppDelegate.swift */; };
+		04F0D6471B17F04300D6F209 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0D6461B17F04300D6F209 /* SignUpViewController.swift */; };
+		04F0D64A1B17F04300D6F209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F0D6481B17F04300D6F209 /* Main.storyboard */; };
+		04F0D64C1B17F04300D6F209 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F0D64B1B17F04300D6F209 /* Images.xcassets */; };
+		04F0D64F1B17F04300D6F209 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F0D64D1B17F04300D6F209 /* LaunchScreen.xib */; };
+		04F0D65B1B17F04300D6F209 /* ParseLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0D65A1B17F04300D6F209 /* ParseLoginTests.swift */; };
+		04F0D6651B17F3DB00D6F209 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0D6641B17F3DB00D6F209 /* LogInViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04F0D6551B17F04300D6F209 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F0D6371B17F04300D6F209 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F0D63E1B17F04300D6F209;
+			remoteInfo = ParseLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04F0D63F1B17F04300D6F209 /* ParseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F0D6431B17F04300D6F209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F0D6441B17F04300D6F209 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04F0D6461B17F04300D6F209 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		04F0D6491B17F04300D6F209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04F0D64B1B17F04300D6F209 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		04F0D64E1B17F04300D6F209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		04F0D6541B17F04300D6F209 /* ParseLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParseLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F0D6591B17F04300D6F209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F0D65A1B17F04300D6F209 /* ParseLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseLoginTests.swift; sourceTree = "<group>"; };
+		04F0D6641B17F3DB00D6F209 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04F0D63C1B17F04300D6F209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F0D6511B17F04300D6F209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F0D6361B17F04300D6F209 = {
+			isa = PBXGroup;
+			children = (
+				04F0D6411B17F04300D6F209 /* ParseLogin */,
+				04F0D6571B17F04300D6F209 /* ParseLoginTests */,
+				04F0D6401B17F04300D6F209 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04F0D6401B17F04300D6F209 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F0D63F1B17F04300D6F209 /* ParseLogin.app */,
+				04F0D6541B17F04300D6F209 /* ParseLoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F0D6411B17F04300D6F209 /* ParseLogin */ = {
+			isa = PBXGroup;
+			children = (
+				04F0D6641B17F3DB00D6F209 /* LogInViewController.swift */,
+				04F0D6461B17F04300D6F209 /* SignUpViewController.swift */,
+				04F0D6481B17F04300D6F209 /* Main.storyboard */,
+				04F0D6421B17F04300D6F209 /* Supporting Files */,
+			);
+			path = ParseLogin;
+			sourceTree = "<group>";
+		};
+		04F0D6421B17F04300D6F209 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04F0D64B1B17F04300D6F209 /* Images.xcassets */,
+				04F0D64D1B17F04300D6F209 /* LaunchScreen.xib */,
+				04F0D6441B17F04300D6F209 /* AppDelegate.swift */,
+				04F0D6431B17F04300D6F209 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04F0D6571B17F04300D6F209 /* ParseLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				04F0D65A1B17F04300D6F209 /* ParseLoginTests.swift */,
+				04F0D6581B17F04300D6F209 /* Supporting Files */,
+			);
+			path = ParseLoginTests;
+			sourceTree = "<group>";
+		};
+		04F0D6581B17F04300D6F209 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04F0D6591B17F04300D6F209 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04F0D63E1B17F04300D6F209 /* ParseLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F0D65E1B17F04300D6F209 /* Build configuration list for PBXNativeTarget "ParseLogin" */;
+			buildPhases = (
+				04F0D63B1B17F04300D6F209 /* Sources */,
+				04F0D63C1B17F04300D6F209 /* Frameworks */,
+				04F0D63D1B17F04300D6F209 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParseLogin;
+			productName = ParseLogin;
+			productReference = 04F0D63F1B17F04300D6F209 /* ParseLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04F0D6531B17F04300D6F209 /* ParseLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F0D6611B17F04300D6F209 /* Build configuration list for PBXNativeTarget "ParseLoginTests" */;
+			buildPhases = (
+				04F0D6501B17F04300D6F209 /* Sources */,
+				04F0D6511B17F04300D6F209 /* Frameworks */,
+				04F0D6521B17F04300D6F209 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F0D6561B17F04300D6F209 /* PBXTargetDependency */,
+			);
+			name = ParseLoginTests;
+			productName = ParseLoginTests;
+			productReference = 04F0D6541B17F04300D6F209 /* ParseLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04F0D6371B17F04300D6F209 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Shannon Armon";
+				TargetAttributes = {
+					04F0D63E1B17F04300D6F209 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					04F0D6531B17F04300D6F209 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 04F0D63E1B17F04300D6F209;
+					};
+				};
+			};
+			buildConfigurationList = 04F0D63A1B17F04300D6F209 /* Build configuration list for PBXProject "ParseLogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04F0D6361B17F04300D6F209;
+			productRefGroup = 04F0D6401B17F04300D6F209 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04F0D63E1B17F04300D6F209 /* ParseLogin */,
+				04F0D6531B17F04300D6F209 /* ParseLoginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04F0D63D1B17F04300D6F209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F0D64A1B17F04300D6F209 /* Main.storyboard in Resources */,
+				04F0D64F1B17F04300D6F209 /* LaunchScreen.xib in Resources */,
+				04F0D64C1B17F04300D6F209 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F0D6521B17F04300D6F209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04F0D63B1B17F04300D6F209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F0D6471B17F04300D6F209 /* SignUpViewController.swift in Sources */,
+				04F0D6451B17F04300D6F209 /* AppDelegate.swift in Sources */,
+				04F0D6651B17F3DB00D6F209 /* LogInViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F0D6501B17F04300D6F209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F0D65B1B17F04300D6F209 /* ParseLoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04F0D6561B17F04300D6F209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F0D63E1B17F04300D6F209 /* ParseLogin */;
+			targetProxy = 04F0D6551B17F04300D6F209 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04F0D6481B17F04300D6F209 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F0D6491B17F04300D6F209 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04F0D64D1B17F04300D6F209 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F0D64E1B17F04300D6F209 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04F0D65C1B17F04300D6F209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04F0D65D1B17F04300D6F209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04F0D65F1B17F04300D6F209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ParseLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04F0D6601B17F04300D6F209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ParseLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04F0D6621B17F04300D6F209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParseLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParseLogin.app/ParseLogin";
+			};
+			name = Debug;
+		};
+		04F0D6631B17F04300D6F209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParseLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParseLogin.app/ParseLogin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04F0D63A1B17F04300D6F209 /* Build configuration list for PBXProject "ParseLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F0D65C1B17F04300D6F209 /* Debug */,
+				04F0D65D1B17F04300D6F209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F0D65E1B17F04300D6F209 /* Build configuration list for PBXNativeTarget "ParseLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F0D65F1B17F04300D6F209 /* Debug */,
+				04F0D6601B17F04300D6F209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04F0D6611B17F04300D6F209 /* Build configuration list for PBXNativeTarget "ParseLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F0D6621B17F04300D6F209 /* Debug */,
+				04F0D6631B17F04300D6F209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04F0D6371B17F04300D6F209 /* Project object */;
+}
