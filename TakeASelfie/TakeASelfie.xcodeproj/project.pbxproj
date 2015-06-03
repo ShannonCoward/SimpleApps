@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044DFAA01B1F7DF00096A17C /* FilterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DFA9F1B1F7DF00096A17C /* FilterCollectionViewCell.m */; };
 		049265EE1B1F347500CB3254 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 049265ED1B1F347500CB3254 /* main.m */; };
 		049265F11B1F347500CB3254 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049265F01B1F347500CB3254 /* AppDelegate.m */; };
 		049265F41B1F347500CB3254 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049265F31B1F347500CB3254 /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044DFA9E1B1F7DF00096A17C /* FilterCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterCollectionViewCell.h; sourceTree = "<group>"; };
+		044DFA9F1B1F7DF00096A17C /* FilterCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterCollectionViewCell.m; sourceTree = "<group>"; };
 		049265E81B1F347500CB3254 /* TakeASelfie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeASelfie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049265EC1B1F347500CB3254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049265ED1B1F347500CB3254 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,9 +88,11 @@
 			isa = PBXGroup;
 			children = (
 				049266111B1F3DAD00CB3254 /* CameraViewController.h */,
-				049266121B1F3DAD00CB3254 /* CameraViewController.m */,
+				044DFA9F1B1F7DF00096A17C /* FilterCollectionViewCell.m */,
 				049265F21B1F347500CB3254 /* ViewController.h */,
 				049265F31B1F347500CB3254 /* ViewController.m */,
+				049266121B1F3DAD00CB3254 /* CameraViewController.m */,
+				044DFA9E1B1F7DF00096A17C /* FilterCollectionViewCell.h */,
 				049265F51B1F347500CB3254 /* Main.storyboard */,
 				049265F81B1F347500CB3254 /* Images.xcassets */,
 				049265FA1B1F347500CB3254 /* LaunchScreen.xib */,
@@ -226,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				049265F41B1F347500CB3254 /* ViewController.m in Sources */,
+				044DFAA01B1F7DF00096A17C /* FilterCollectionViewCell.m in Sources */,
 				049266131B1F3DAD00CB3254 /* CameraViewController.m in Sources */,
 				049265F11B1F347500CB3254 /* AppDelegate.m in Sources */,
 				049265EE1B1F347500CB3254 /* main.m in Sources */,
@@ -429,6 +435,7 @@
 				0492660D1B1F347500CB3254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0492660E1B1F347500CB3254 /* Build configuration list for PBXNativeTarget "TakeASelfieTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +444,7 @@
 				049266101B1F347500CB3254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
