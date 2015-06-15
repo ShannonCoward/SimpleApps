@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mHZ-Q9-RbF">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Camera View Controller-->
@@ -35,6 +36,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xp8-wW-cpR">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="15q-LO-5Od">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
                             </imageView>
@@ -69,6 +73,26 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAY-uZ-hU0">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LYl-i3-Pbh"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KkU-zK-bv2">
+                                <rect key="frame" x="14" y="453" width="572" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="i3S-Fl-o85"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="filterIntensityChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="RVZ-Uu-Oc7"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -76,7 +100,14 @@
                             <constraint firstItem="15q-LO-5Od" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="3VM-aF-qnK"/>
                             <constraint firstAttribute="bottom" secondItem="Ba2-Vn-3K9" secondAttribute="bottom" id="4yH-eD-FYX"/>
                             <constraint firstAttribute="trailing" secondItem="15q-LO-5Od" secondAttribute="trailing" id="6TK-1u-GDZ"/>
+                            <constraint firstItem="Xp8-wW-cpR" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="KLu-iv-CuA"/>
+                            <constraint firstAttribute="trailing" secondItem="Xp8-wW-cpR" secondAttribute="trailing" id="OeF-Qe-sgN"/>
+                            <constraint firstItem="Ba2-Vn-3K9" firstAttribute="top" secondItem="KkU-zK-bv2" secondAttribute="bottom" constant="17" id="PDa-RH-9fc"/>
                             <constraint firstItem="Ba2-Vn-3K9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Uc7-yT-kbt"/>
+                            <constraint firstItem="KkU-zK-bv2" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Zhq-Bz-42r"/>
+                            <constraint firstItem="Ba2-Vn-3K9" firstAttribute="top" secondItem="Xp8-wW-cpR" secondAttribute="bottom" id="d8u-y5-hJC"/>
+                            <constraint firstItem="KkU-zK-bv2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="dIJ-EU-kgk"/>
+                            <constraint firstItem="Xp8-wW-cpR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="eSM-IZ-HhC"/>
                             <constraint firstAttribute="trailing" secondItem="Ba2-Vn-3K9" secondAttribute="trailing" id="eud-Ve-qT6"/>
                             <constraint firstItem="15q-LO-5Od" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="tUJ-IT-OHR"/>
                         </constraints>
@@ -84,6 +115,7 @@
                     <connections>
                         <outlet property="filterCollectionView" destination="Ba2-Vn-3K9" id="TLc-ZO-XA5"/>
                         <outlet property="imageView" destination="15q-LO-5Od" id="OYh-pn-1tQ"/>
+                        <outlet property="unFilteredImageView" destination="Xp8-wW-cpR" id="P4B-nT-bDR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

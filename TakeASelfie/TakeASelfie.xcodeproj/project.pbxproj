@@ -88,10 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				049266111B1F3DAD00CB3254 /* CameraViewController.h */,
+				049266121B1F3DAD00CB3254 /* CameraViewController.m */,
 				044DFA9F1B1F7DF00096A17C /* FilterCollectionViewCell.m */,
 				049265F21B1F347500CB3254 /* ViewController.h */,
 				049265F31B1F347500CB3254 /* ViewController.m */,
-				049266121B1F3DAD00CB3254 /* CameraViewController.m */,
 				044DFA9E1B1F7DF00096A17C /* FilterCollectionViewCell.h */,
 				049265F51B1F347500CB3254 /* Main.storyboard */,
 				049265F81B1F347500CB3254 /* Images.xcassets */,

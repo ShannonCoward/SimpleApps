@@ -101,17 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				04F0D5AD1B17506200D6F209 /* SlytherFrynds */,
-				04F0D5EB1B1753CE00D6F209 /* libsqlite3.dylib */,
-				04F0D5E91B1753C300D6F209 /* libz.dylib */,
-				04F0D5E71B1753B100D6F209 /* SystemConfiguration.framework */,
-				04F0D5E51B1753A600D6F209 /* StoreKit.framework */,
-				04F0D5E31B17539E00D6F209 /* Security.framework */,
-				04F0D5E11B17539500D6F209 /* QuartzCore.framework */,
-				04F0D5DF1B17538700D6F209 /* MobileCoreServices.framework */,
-				04F0D5DD1B17537B00D6F209 /* CoreLocation.framework */,
-				04F0D5DB1B17537200D6F209 /* CoreGraphics.framework */,
-				04F0D5D91B17536700D6F209 /* CFNetwork.framework */,
-				04F0D5D71B17535E00D6F209 /* AudioToolbox.framework */,
 				04F0D5C51B17506300D6F209 /* SlytherFryndsTests */,
 				04F0D5AC1B17506200D6F209 /* Products */,
 				04F0D5D21B17528100D6F209 /* Frameworks */,
@@ -169,6 +158,17 @@
 		04F0D5D21B17528100D6F209 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04F0D5EB1B1753CE00D6F209 /* libsqlite3.dylib */,
+				04F0D5E91B1753C300D6F209 /* libz.dylib */,
+				04F0D5E71B1753B100D6F209 /* SystemConfiguration.framework */,
+				04F0D5E51B1753A600D6F209 /* StoreKit.framework */,
+				04F0D5E31B17539E00D6F209 /* Security.framework */,
+				04F0D5E11B17539500D6F209 /* QuartzCore.framework */,
+				04F0D5DF1B17538700D6F209 /* MobileCoreServices.framework */,
+				04F0D5DD1B17537B00D6F209 /* CoreLocation.framework */,
+				04F0D5DB1B17537200D6F209 /* CoreGraphics.framework */,
+				04F0D5D91B17536700D6F209 /* CFNetwork.framework */,
+				04F0D5D71B17535E00D6F209 /* AudioToolbox.framework */,
 				04F0D5D31B1752E700D6F209 /* Bolts.framework */,
 				04F0D5D51B1752FE00D6F209 /* Parse.framework */,
 			);
@@ -484,6 +484,7 @@
 				04F0D5CE1B17506300D6F209 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04F0D5CF1B17506300D6F209 /* Build configuration list for PBXNativeTarget "SlytherFryndsTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +493,7 @@
 				04F0D5D11B17506300D6F209 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
