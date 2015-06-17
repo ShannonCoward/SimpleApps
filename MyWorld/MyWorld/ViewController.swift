@@ -84,6 +84,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     func requestVenuesWithLocation(location: CLLocation, completion: (venues: [AnyObject]) -> ()) {
         
+
+        
         let API_URL = "https://api.foursquare.com/v2/"
         let CLIENT_ID = "ME2AQ23HOFUHU4TIH4K3CITSEEJEYY4UAEBPFB4NQJ43ABSU"
         let CLIENT_SECRET = "PWEV2YWSYS0PPLF0UZF5M1MEX4LC1ITTDY1N2LU4EWTIL3KY"
@@ -111,6 +113,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                             
                             completion(venues: venuesInfo)
                             
+                            if let catergoryInfo = returnedInfo["catergories"] as? [AnyObject] {
+                                
+                            }
+                            
                         }
                         
                         
@@ -123,6 +129,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             lManager.stopUpdatingLocation()
             
         }
+        
         
     }
     
@@ -156,19 +163,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         var detailVC = UIViewController()             //<======Makes ViewController
         
         var venue = allVenues[button.tag]
-    
+        
         detailVC.view.backgroundColor = UIColor.whiteColor()
         
         detailVC.navigationItem.title = venue ["name"] as? String
         
         var box = UIView(frame: CGRectMake(20, 20, 100, 100))
-        box.backgroundColor = UIColor.blueColor()
+        box.backgroundColor = UIColor.grayColor()
         
         detailVC.view.addSubview(box)
         
         navigationController?.pushViewController(detailVC, animated: true)
         
+        
     }
+
     
 }
 

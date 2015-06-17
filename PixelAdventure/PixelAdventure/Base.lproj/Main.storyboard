@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LVB-YS-i5n">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <viewController id="LVB-YS-i5n" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PCf-gQ-wO7"/>
+                        <viewControllerLayoutGuide type="bottom" id="b3d-qh-BLL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlY-Zh-3Nd">
+                                <rect key="frame" x="42" y="272" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Qid-Na-mS0"/>
+                                    <constraint firstAttribute="width" constant="40" id="Vaw-Z2-nOP"/>
+                                </constraints>
+                                <state key="normal" title="W">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveButtonPressed:" destination="LVB-YS-i5n" eventType="touchUpInside" id="W39-1l-F1y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avu-7d-Z3Z">
+                                <rect key="frame" x="16" y="312" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Cax-1Z-BOS"/>
+                                    <constraint firstAttribute="height" constant="40" id="fae-wP-d7c"/>
+                                </constraints>
+                                <state key="normal" title="A">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedDown:" destination="LVB-YS-i5n" eventType="touchDown" id="ftm-wL-0lZ"/>
+                                    <action selector="releaseButton:" destination="LVB-YS-i5n" eventType="touchUpInside" id="Pui-dK-Qcf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVk-tf-bQA">
+                                <rect key="frame" x="42" y="352" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="U8d-DF-hEr"/>
+                                </constraints>
+                                <state key="normal" title="S">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveButtonPressed:" destination="LVB-YS-i5n" eventType="touchUpInside" id="I7c-K4-27I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDl-gQ-3wD">
+                                <rect key="frame" x="64" y="312" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="gBU-z9-mR3"/>
+                                </constraints>
+                                <state key="normal" title="D">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedDown:" destination="LVB-YS-i5n" eventType="touchDown" id="Tan-KD-how"/>
+                                    <action selector="releaseButton:" destination="LVB-YS-i5n" eventType="touchUpInside" id="n9g-sG-fxt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAC-kQ-L1C">
+                                <rect key="frame" x="551" y="340" width="44" height="40"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="7OO-4Q-2pc"/>
+                                </constraints>
+                                <state key="normal" title="1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fireButtonPressed:" destination="LVB-YS-i5n" eventType="touchUpInside" id="FBP-T8-ncG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fb-Ce-Aka">
+                                <rect key="frame" x="633" y="340" width="51" height="40"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="GSQ-HA-Mnn"/>
+                                </constraints>
+                                <state key="normal" title="2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fireButtonPressed:" destination="LVB-YS-i5n" eventType="touchUpInside" id="s2I-5q-yTY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jAC-kQ-L1C" firstAttribute="baseline" secondItem="3Fb-Ce-Aka" secondAttribute="firstBaseline" id="564-R5-qQr"/>
+                            <constraint firstItem="BlY-Zh-3Nd" firstAttribute="leading" secondItem="WVk-tf-bQA" secondAttribute="leading" id="7Oy-pn-Nxm"/>
+                            <constraint firstItem="cDl-gQ-3wD" firstAttribute="top" secondItem="BlY-Zh-3Nd" secondAttribute="bottom" id="BbQ-TO-yzv"/>
+                            <constraint firstItem="jAC-kQ-L1C" firstAttribute="top" secondItem="PCf-gQ-wO7" secondAttribute="bottom" constant="320" id="CcP-ZX-gMQ"/>
+                            <constraint firstItem="3Fb-Ce-Aka" firstAttribute="leading" secondItem="jAC-kQ-L1C" secondAttribute="trailing" constant="38" id="FZZ-UY-i51"/>
+                            <constraint firstItem="cDl-gQ-3wD" firstAttribute="leading" secondItem="avu-7d-Z3Z" secondAttribute="trailing" constant="8" symbolic="YES" id="IMF-qd-oYn"/>
+                            <constraint firstItem="avu-7d-Z3Z" firstAttribute="leading" secondItem="bdc-N1-crn" secondAttribute="leadingMargin" id="Jwq-H2-xdh"/>
+                            <constraint firstAttribute="bottom" secondItem="jAC-kQ-L1C" secondAttribute="bottom" constant="20" symbolic="YES" id="Jyb-Iu-XfW"/>
+                            <constraint firstItem="BlY-Zh-3Nd" firstAttribute="trailing" secondItem="WVk-tf-bQA" secondAttribute="trailing" id="LFg-e0-0tl"/>
+                            <constraint firstItem="3Fb-Ce-Aka" firstAttribute="baseline" secondItem="jAC-kQ-L1C" secondAttribute="firstBaseline" id="PKg-Eh-0JP"/>
+                            <constraint firstItem="3Fb-Ce-Aka" firstAttribute="top" secondItem="jAC-kQ-L1C" secondAttribute="top" id="ShQ-of-XS4"/>
+                            <constraint firstItem="avu-7d-Z3Z" firstAttribute="top" secondItem="cDl-gQ-3wD" secondAttribute="top" id="Twb-8X-eFP"/>
+                            <constraint firstItem="b3d-qh-BLL" firstAttribute="top" secondItem="WVk-tf-bQA" secondAttribute="bottom" constant="8" symbolic="YES" id="bpg-BH-dNa"/>
+                            <constraint firstItem="cDl-gQ-3wD" firstAttribute="baseline" secondItem="avu-7d-Z3Z" secondAttribute="firstBaseline" id="mkB-Rb-yNH"/>
+                            <constraint firstItem="avu-7d-Z3Z" firstAttribute="baseline" secondItem="cDl-gQ-3wD" secondAttribute="firstBaseline" id="rsM-Ws-EeY"/>
+                            <constraint firstItem="3Fb-Ce-Aka" firstAttribute="trailing" secondItem="bdc-N1-crn" secondAttribute="trailingMargin" id="u77-aT-l6b"/>
+                            <constraint firstItem="WVk-tf-bQA" firstAttribute="top" secondItem="cDl-gQ-3wD" secondAttribute="bottom" id="uJn-5W-fVL"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="700" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

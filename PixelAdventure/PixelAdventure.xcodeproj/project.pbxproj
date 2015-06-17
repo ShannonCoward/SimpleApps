@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		044EA05E1B25D1F900C73FBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EA05D1B25D1F900C73FBB /* main.m */; };
+		044EA0611B25D1F900C73FBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EA0601B25D1F900C73FBB /* AppDelegate.m */; };
+		044EA0641B25D1F900C73FBB /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EA0631B25D1F900C73FBB /* GameScene.m */; };
+		044EA0661B25D1F900C73FBB /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 044EA0651B25D1F900C73FBB /* GameScene.sks */; };
+		044EA0691B25D1F900C73FBB /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EA0681B25D1F900C73FBB /* GameViewController.m */; };
+		044EA06C1B25D1F900C73FBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044EA06A1B25D1F900C73FBB /* Main.storyboard */; };
+		044EA06E1B25D1F900C73FBB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044EA06D1B25D1F900C73FBB /* Images.xcassets */; };
+		044EA0711B25D1F900C73FBB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044EA06F1B25D1F900C73FBB /* LaunchScreen.xib */; };
+		044EA07D1B25D1F900C73FBB /* PixelAdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EA07C1B25D1F900C73FBB /* PixelAdventureTests.m */; };
+		044EA0881B25F07200C73FBB /* Attack.sks in Resources */ = {isa = PBXBuildFile; fileRef = 044EA0861B25F07200C73FBB /* Attack.sks */; };
+		044EA0891B25F07200C73FBB /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 044EA0871B25F07200C73FBB /* spark.png */; };
+		04DB16D21B271FB900FCA436 /* fireball.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04DB16D11B271FB900FCA436 /* fireball.wav */; };
+		04DB17091B27346000FCA436 /* shooterPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DB17081B27346000FCA436 /* shooterPic.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		044EA0771B25D1F900C73FBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044EA0501B25D1F900C73FBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 044EA0571B25D1F900C73FBB;
+			remoteInfo = PixelAdventure;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		044EA0581B25D1F900C73FBB /* PixelAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		044EA05C1B25D1F900C73FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044EA05D1B25D1F900C73FBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		044EA05F1B25D1F900C73FBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		044EA0601B25D1F900C73FBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		044EA0621B25D1F900C73FBB /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		044EA0631B25D1F900C73FBB /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		044EA0651B25D1F900C73FBB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		044EA0671B25D1F900C73FBB /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		044EA0681B25D1F900C73FBB /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		044EA06B1B25D1F900C73FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		044EA06D1B25D1F900C73FBB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		044EA0701B25D1F900C73FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		044EA0761B25D1F900C73FBB /* PixelAdventureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelAdventureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		044EA07B1B25D1F900C73FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044EA07C1B25D1F900C73FBB /* PixelAdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PixelAdventureTests.m; sourceTree = "<group>"; };
+		044EA0861B25F07200C73FBB /* Attack.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Attack.sks; sourceTree = "<group>"; };
+		044EA0871B25F07200C73FBB /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		04DB16D11B271FB900FCA436 /* fireball.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fireball.wav; sourceTree = "<group>"; };
+		04DB17081B27346000FCA436 /* shooterPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shooterPic.png; path = Images.xcassets/shooterPic.imageset/shooterPic.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		044EA0551B25D1F900C73FBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044EA0731B25D1F900C73FBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		044EA04F1B25D1F900C73FBB = {
+			isa = PBXGroup;
+			children = (
+				044EA05A1B25D1F900C73FBB /* PixelAdventure */,
+				044EA0791B25D1F900C73FBB /* PixelAdventureTests */,
+				044EA0591B25D1F900C73FBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		044EA0591B25D1F900C73FBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				044EA0581B25D1F900C73FBB /* PixelAdventure.app */,
+				044EA0761B25D1F900C73FBB /* PixelAdventureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		044EA05A1B25D1F900C73FBB /* PixelAdventure */ = {
+			isa = PBXGroup;
+			children = (
+				044EA0621B25D1F900C73FBB /* GameScene.h */,
+				044EA0631B25D1F900C73FBB /* GameScene.m */,
+				044EA0861B25F07200C73FBB /* Attack.sks */,
+				044EA0871B25F07200C73FBB /* spark.png */,
+				044EA0651B25D1F900C73FBB /* GameScene.sks */,
+				044EA0671B25D1F900C73FBB /* GameViewController.h */,
+				044EA0681B25D1F900C73FBB /* GameViewController.m */,
+				044EA06A1B25D1F900C73FBB /* Main.storyboard */,
+				044EA05B1B25D1F900C73FBB /* Supporting Files */,
+			);
+			path = PixelAdventure;
+			sourceTree = "<group>";
+		};
+		044EA05B1B25D1F900C73FBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				044EA06D1B25D1F900C73FBB /* Images.xcassets */,
+				044EA06F1B25D1F900C73FBB /* LaunchScreen.xib */,
+				044EA05C1B25D1F900C73FBB /* Info.plist */,
+				04DB17081B27346000FCA436 /* shooterPic.png */,
+				044EA05D1B25D1F900C73FBB /* main.m */,
+				044EA05F1B25D1F900C73FBB /* AppDelegate.h */,
+				044EA0601B25D1F900C73FBB /* AppDelegate.m */,
+				04DB16D11B271FB900FCA436 /* fireball.wav */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		044EA0791B25D1F900C73FBB /* PixelAdventureTests */ = {
+			isa = PBXGroup;
+			children = (
+				044EA07C1B25D1F900C73FBB /* PixelAdventureTests.m */,
+				044EA07A1B25D1F900C73FBB /* Supporting Files */,
+			);
+			path = PixelAdventureTests;
+			sourceTree = "<group>";
+		};
+		044EA07A1B25D1F900C73FBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				044EA07B1B25D1F900C73FBB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		044EA0571B25D1F900C73FBB /* PixelAdventure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044EA0801B25D1F900C73FBB /* Build configuration list for PBXNativeTarget "PixelAdventure" */;
+			buildPhases = (
+				044EA0541B25D1F900C73FBB /* Sources */,
+				044EA0551B25D1F900C73FBB /* Frameworks */,
+				044EA0561B25D1F900C73FBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelAdventure;
+			productName = PixelAdventure;
+			productReference = 044EA0581B25D1F900C73FBB /* PixelAdventure.app */;
+			productType = "com.apple.product-type.application";
+		};
+		044EA0751B25D1F900C73FBB /* PixelAdventureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044EA0831B25D1F900C73FBB /* Build configuration list for PBXNativeTarget "PixelAdventureTests" */;
+			buildPhases = (
+				044EA0721B25D1F900C73FBB /* Sources */,
+				044EA0731B25D1F900C73FBB /* Frameworks */,
+				044EA0741B25D1F900C73FBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				044EA0781B25D1F900C73FBB /* PBXTargetDependency */,
+			);
+			name = PixelAdventureTests;
+			productName = PixelAdventureTests;
+			productReference = 044EA0761B25D1F900C73FBB /* PixelAdventureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		044EA0501B25D1F900C73FBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Shannon Armon";
+				TargetAttributes = {
+					044EA0571B25D1F900C73FBB = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					044EA0751B25D1F900C73FBB = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 044EA0571B25D1F900C73FBB;
+					};
+				};
+			};
+			buildConfigurationList = 044EA0531B25D1F900C73FBB /* Build configuration list for PBXProject "PixelAdventure" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 044EA04F1B25D1F900C73FBB;
+			productRefGroup = 044EA0591B25D1F900C73FBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				044EA0571B25D1F900C73FBB /* PixelAdventure */,
+				044EA0751B25D1F900C73FBB /* PixelAdventureTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		044EA0561B25D1F900C73FBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044EA0711B25D1F900C73FBB /* LaunchScreen.xib in Resources */,
+				04DB17091B27346000FCA436 /* shooterPic.png in Resources */,
+				044EA0891B25F07200C73FBB /* spark.png in Resources */,
+				044EA0881B25F07200C73FBB /* Attack.sks in Resources */,
+				04DB16D21B271FB900FCA436 /* fireball.wav in Resources */,
+				044EA06E1B25D1F900C73FBB /* Images.xcassets in Resources */,
+				044EA0661B25D1F900C73FBB /* GameScene.sks in Resources */,
+				044EA06C1B25D1F900C73FBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044EA0741B25D1F900C73FBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		044EA0541B25D1F900C73FBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044EA0691B25D1F900C73FBB /* GameViewController.m in Sources */,
+				044EA0611B25D1F900C73FBB /* AppDelegate.m in Sources */,
+				044EA0641B25D1F900C73FBB /* GameScene.m in Sources */,
+				044EA05E1B25D1F900C73FBB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044EA0721B25D1F900C73FBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044EA07D1B25D1F900C73FBB /* PixelAdventureTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		044EA0781B25D1F900C73FBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 044EA0571B25D1F900C73FBB /* PixelAdventure */;
+			targetProxy = 044EA0771B25D1F900C73FBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		044EA06A1B25D1F900C73FBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044EA06B1B25D1F900C73FBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		044EA06F1B25D1F900C73FBB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044EA0701B25D1F900C73FBB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		044EA07E1B25D1F900C73FBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		044EA07F1B25D1F900C73FBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		044EA0811B25D1F900C73FBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PixelAdventure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		044EA0821B25D1F900C73FBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PixelAdventure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		044EA0841B25D1F900C73FBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PixelAdventureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixelAdventure.app/PixelAdventure";
+			};
+			name = Debug;
+		};
+		044EA0851B25D1F900C73FBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PixelAdventureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixelAdventure.app/PixelAdventure";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		044EA0531B25D1F900C73FBB /* Build configuration list for PBXProject "PixelAdventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044EA07E1B25D1F900C73FBB /* Debug */,
+				044EA07F1B25D1F900C73FBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044EA0801B25D1F900C73FBB /* Build configuration list for PBXNativeTarget "PixelAdventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044EA0811B25D1F900C73FBB /* Debug */,
+				044EA0821B25D1F900C73FBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044EA0831B25D1F900C73FBB /* Build configuration list for PBXNativeTarget "PixelAdventureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044EA0841B25D1F900C73FBB /* Debug */,
+				044EA0851B25D1F900C73FBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 044EA0501B25D1F900C73FBB /* Project object */;
+}
