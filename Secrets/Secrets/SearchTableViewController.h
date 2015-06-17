@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SearchTableViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UISearchBar *friendNameSearchBar;
+
 
 @end

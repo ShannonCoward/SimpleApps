@@ -21,16 +21,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [Parse  setApplicationId:@"H6bP6K8eMKvv7boF0OnjxTbEIhcdjB1fPyKkCpys" clientKey:@"7iyOvKoxnV2jKYfcu30DkWegnR4tTGseXR8fxp0D"];
+    [Parse  setApplicationId:@"EoylPi3nI65mithTPffbbPVjoWO25yOuHtS8ZMz0" clientKey:@"U8JkLVMvB0hUTZXgA2qd2GpgbwLxZBnSZApxQGu9"];
     
 //        [PFUser enableAutomaticUser];
 //
 //    PFUser * user = [PFUser user];
 //    user.username = @"BigDawg";
 //    user.password = @"password";
-//    [user signUpInBackground];
+////    [user signUp];
 
-    [PFUser logInWithUsernameInBackground:@"BigDawg" password:@"password"];
+    [PFUser logInWithUsername:@"BigDawg" password:@"password"];
     
     //REGISTER FOR PUSH NOTIFICATIONS
     UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
