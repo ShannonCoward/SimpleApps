@@ -61,7 +61,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             let query = PFQuery(className: "user")
             
-            query.delete(sender: "user"∫)
+            query.delete("user")
             
             // Do stuff with the user
         } else {

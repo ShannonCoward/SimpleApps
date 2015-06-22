@@ -15,6 +15,7 @@
 		04A817C31B3075AC007861AA /* ReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A817C21B3075AC007861AA /* ReviewTests.swift */; };
 		04A817CD1B307819007861AA /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A817CC1B307819007861AA /* LoginStoryboard.storyboard */; };
 		04A817CF1B307B89007861AA /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A817CE1B307B89007861AA /* Random.swift */; };
+		04DE4A741B330C3E00C9F376 /* GroupProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE4A731B330C3E00C9F376 /* GroupProjectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		04A817CC1B307819007861AA /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		04A817CE1B307B89007861AA /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		04A817D01B307CF3007861AA /* Fun.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Fun.playground; sourceTree = "<group>"; };
+		04DE4A731B330C3E00C9F376 /* GroupProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupProjectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				04A817AC1B3075AB007861AA /* AppDelegate.swift */,
 				04A817AE1B3075AB007861AA /* ViewController.swift */,
+				04DE4A731B330C3E00C9F376 /* GroupProjectViewController.swift */,
 				04A817D01B307CF3007861AA /* Fun.playground */,
 				04A817CC1B307819007861AA /* LoginStoryboard.storyboard */,
 				04A817B01B3075AC007861AA /* Main.storyboard */,
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DE4A741B330C3E00C9F376 /* GroupProjectViewController.swift in Sources */,
 				04A817AF1B3075AB007861AA /* ViewController.swift in Sources */,
 				04A817AD1B3075AB007861AA /* AppDelegate.swift in Sources */,
 				04A817CF1B307B89007861AA /* Random.swift in Sources */,
