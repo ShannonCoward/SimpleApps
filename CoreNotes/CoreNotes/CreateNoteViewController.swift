@@ -47,6 +47,8 @@ class CreateNoteViewController: UIViewController {
             newObject.setValue(notTextField.text, forKey: "content")
             newObject.setValue(NSDate(), forKey: "created")
             
+         ////////   //add five buttons and set category relationship
+            
             appDelegate.saveContext()
         
             dismissViewControllerAnimated(true, completion: nil)
@@ -55,6 +57,8 @@ class CreateNoteViewController: UIViewController {
         
         
     }
+    
+    
     
     
     override func viewDidLoad() {

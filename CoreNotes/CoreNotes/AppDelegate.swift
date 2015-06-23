@@ -15,14 +15,52 @@ import CoreData
 
 
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+  
+    var category: [[NSManagedObject]] = []
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if let moc = managedObjectContext {
+        
+            let catEntity = NSEntityDescription.entityForName("Category", inManagedObjectContext: moc)
+            
+            let request = NSFetchRequest()
+            
+                request.entity = catEntity
+            
+            if let catObjects = moc.executeFetchRequest(request, error: nil) {
+                
+            
+                if catObjects.count == 0 {
+                
+                    //create Categories
+                    
+                    for (colorName,(catName,color)) in categories {
+                        
+                        
+                        let newCat = NSEntityDescription.insertNewObjectForEntityForName("Category", inManagedObjectContext: moc) as! NSManagedObject
+                        
+                        newCat.setValue(colorName, forKey: "color")
+                        newCat.setValue(catName, forKey: "name")
+                    
+                    }
+                    
+                    saveContext()
+                
+                }
+            }
+        
+        
+        }
+        
         return true
     }
 
@@ -112,6 +150,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
 }
 

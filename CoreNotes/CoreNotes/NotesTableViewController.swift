@@ -19,119 +19,165 @@ import CoreData
 
 class NotesTableViewController: UITableViewController {
     
-    var notes: [[NSManagedObject]] = []
+    //Category Color : [ Notes ]
+    
+    var categoryNotes: [String:[NSManagedObject]] = [:]
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         if let moc = appDelegate.managedObjectContext {
             
-            let entity = NSEntityDescription.entityForName("Note", inManagedObjectContext: moc)
+            let catEntity = NSEntityDescription.entityForName("Category", inManagedObjectContext: moc)
             
             let request = NSFetchRequest()
             
-            request.entity = entity
+            request.entity = catEntity
             
-            if let objects = moc.executeFetchRequest(request, error: nil) as? [NSManagedObject] {
+            if let catObjects = moc.executeFetchRequest(request, error: nil) as? [NSManagedObject] {
                 
+                for catObject in catObjects {
+                    
+                    let entity = NSEntityDescription.entityForName("Note", inManagedObjectContext: moc)
+                    
+                    let request = NSFetchRequest()
+                    
+                    request.entity = entity
+                    
+           //////////         //add predicate filter for category
+                    
+                    
+                    if let objects = moc.executeFetchRequest(request, error: nil) as? [NSManagedObject] {
+                        
+                        categoryNotes[catObject.valueForKey("color") as! String] = objects
+                        
+                        //
+                        
+                        tableView.reloadData()
+                        
+                    }
+                    
+                }
                 
-                notes = []
-                notes.append(objects)
-                
-                tableView.reloadData()
             }
             
         }
+        
     }
-
+    
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let categoryName = categoryNotes.keys.array[section]
+        
+        let color = categoryColor(categoryName)
+        
+        let header = UIView()
+        
+        header.backgroundColor = color
+    
+        let label = UILabel(frame: CGRectMake(6, 0, 200, 30))
+        
+        label.text = categories[categoryName]!.0
+        label.font = UIFont.systemFontOfSize(15)
+        
+        header.addSubview(label)
+        
+        return header
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         
-     
+        
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return notes.count
+        return categoryNotes.keys.array.count
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return notes[section].count
+        
+        let categoryName = categoryNotes.keys.array[section]
+        return categoryNotes[categoryName]!.count
     }
-
-  
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("noteCell", forIndexPath: indexPath) as! UITableViewCell
-
-        let note = notes[indexPath.section][indexPath.row]
+        
+        let categoryName = categoryNotes.keys.array[indexPath.section]
+        let note = categoryNotes[categoryName]![indexPath.row]
         
         cell.textLabel?.text = note.valueForKey("content") as? String
-
+        
         return cell
     }
     
-
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
+    // Return NO if you do not want the specified item to be editable.
+    return true
     }
     */
-
-   
+    
+    
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             
-            let note = notes[indexPath.section][indexPath.row]
+            
+            let categoryName = categoryNotes.keys.array[indexPath.section]
+            let note = categoryNotes[categoryName]![indexPath.row]
             
             appDelegate.managedObjectContext?.deleteObject(note)
             appDelegate.saveContext()
             
-            notes[indexPath.section].removeAtIndex(indexPath.row)
+            categoryNotes[categoryName]!.removeAtIndex(indexPath.row)
             
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
-
-
+    
+    
     /*
     // Override to support rearranging the table view.
     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
+    
     }
     */
-
+    
     /*
     // Override to support conditional rearranging of the table view.
     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
+    // Return NO if you do not want the item to be re-orderable.
+    return true
     }
     */
-
+    
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
     }
     */
-
+    
 }
