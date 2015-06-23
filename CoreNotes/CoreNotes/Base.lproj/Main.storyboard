@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8M7-ID-4O9">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Notes Table View Controller-->
@@ -55,9 +56,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VY0-p7-K0f">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VY0-p7-K0f">
                                 <rect key="frame" x="16" y="104" width="568" height="57"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="57" id="4F9-rN-4DF"/>
+                                    <constraint firstAttribute="height" constant="57" id="Lyx-Xr-vyi"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="568" id="rbf-9C-hkz"/>
+                                    <constraint firstAttribute="width" constant="568" id="zfh-K3-85k"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="34"/>
                                 <state key="normal" title="CREATE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -67,13 +74,27 @@
                                     <action selector="createNote:" destination="QR2-ru-gs2" eventType="touchUpInside" id="Ytc-QI-OaH"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Note" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bu2-gT-gwy">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Note" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bu2-gT-gwy">
                                 <rect key="frame" x="16" y="56" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Bs3-uc-XgH"/>
+                                    <constraint firstAttribute="width" constant="568" id="Zno-ul-8RV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="VY0-p7-K0f" secondAttribute="centerX" id="Ejw-wW-M2A"/>
+                            <constraint firstItem="bu2-gT-gwy" firstAttribute="trailing" secondItem="maJ-qn-25X" secondAttribute="trailingMargin" id="IhB-St-9eD"/>
+                            <constraint firstAttribute="centerX" secondItem="bu2-gT-gwy" secondAttribute="centerX" id="MaJ-W6-FaR"/>
+                            <constraint firstItem="bu2-gT-gwy" firstAttribute="leading" secondItem="maJ-qn-25X" secondAttribute="leadingMargin" id="Sco-Rx-Y6J"/>
+                            <constraint firstItem="VY0-p7-K0f" firstAttribute="leading" secondItem="maJ-qn-25X" secondAttribute="leadingMargin" id="UK9-3s-IMf"/>
+                            <constraint firstItem="bu2-gT-gwy" firstAttribute="top" secondItem="1lJ-bP-N8K" secondAttribute="bottom" constant="36" id="dpJ-yg-cZ3"/>
+                            <constraint firstItem="VY0-p7-K0f" firstAttribute="trailing" secondItem="maJ-qn-25X" secondAttribute="trailingMargin" id="hlf-8H-SJc"/>
+                            <constraint firstItem="VY0-p7-K0f" firstAttribute="top" secondItem="bu2-gT-gwy" secondAttribute="bottom" constant="18" id="xch-QX-zbh"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="notTextField" destination="bu2-gT-gwy" id="b2R-7p-sKo"/>

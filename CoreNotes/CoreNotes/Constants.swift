@@ -10,3 +10,6 @@ import Foundation
 
 
 let DEBUG = true
+
+//2
+//create a global function that returns a UIColor based on a String

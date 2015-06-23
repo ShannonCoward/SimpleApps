@@ -9,28 +9,46 @@
 import UIKit
 import CoreData
 
+
+//4
+// fetch all categories (set a local array to returned objects)
+// per category fetch notes that have the category(adding an array of notes returned)
+
+
+// add a section title based on category name
+
 class NotesTableViewController: UITableViewController {
     
     var notes: [[NSManagedObject]] = []
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         
         if let moc = appDelegate.managedObjectContext {
-
-        let entity = NSEntityDescription.entityForName("Note", inManagedObjectContext: moc)
+            
+            let entity = NSEntityDescription.entityForName("Note", inManagedObjectContext: moc)
             
             let request = NSFetchRequest()
             
             request.entity = entity
             
+            if let objects = moc.executeFetchRequest(request, error: nil) as? [NSManagedObject] {
+                
+                
+                notes = []
+                notes.append(objects)
+                
+                tableView.reloadData()
+            }
+            
         }
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+    }
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    
+        
+     
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,17 +90,24 @@ class NotesTableViewController: UITableViewController {
     }
     */
 
-    /*
+   
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-            // Delete the row from the data source
+            
+            let note = notes[indexPath.section][indexPath.row]
+            
+            appDelegate.managedObjectContext?.deleteObject(note)
+            appDelegate.saveContext()
+            
+            notes[indexPath.section].removeAtIndex(indexPath.row)
+            
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+
 
     /*
     // Override to support rearranging the table view.

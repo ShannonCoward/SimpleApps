@@ -9,6 +9,14 @@
 import UIKit
 import CoreData
 
+
+//3
+// add a category relationship for the new note
+
+// Hard Mode
+// add a textField and button
+// add tags comma seperated for the new note
+
 var appDelegate: AppDelegate = {
 
     return (UIApplication.sharedApplication().delegate as! AppDelegate)
@@ -33,7 +41,7 @@ class CreateNoteViewController: UIViewController {
 //            let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         
         if let moc = appDelegate.managedObjectContext {
-            var newObject = NSEntityDescription.insertNewObjectForEntityForName("note", inManagedObjectContext: moc) as! NSManagedObject
+            var newObject = NSEntityDescription.insertNewObjectForEntityForName("Note", inManagedObjectContext: moc) as! NSManagedObject
         
             
             newObject.setValue(notTextField.text, forKey: "content")

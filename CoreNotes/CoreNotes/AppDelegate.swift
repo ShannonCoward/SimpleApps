@@ -9,6 +9,12 @@
 import UIKit
 import CoreData
 
+//1
+// after launch check for categories in core data
+// if no categories run a script to create 5 categories(name and color)
+
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
