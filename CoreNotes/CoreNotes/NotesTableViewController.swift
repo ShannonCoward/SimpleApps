@@ -47,6 +47,7 @@ class NotesTableViewController: UITableViewController {
            //////////         //add predicate filter for category
                     
                     
+                    
                     if let objects = moc.executeFetchRequest(request, error: nil) as? [NSManagedObject] {
                         
                         categoryNotes[catObject.valueForKey("color") as! String] = objects
