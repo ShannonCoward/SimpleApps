@@ -41,13 +41,29 @@ class CreateNoteViewController: UIViewController {
 //            let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         
         if let moc = appDelegate.managedObjectContext {
-            var newObject = NSEntityDescription.insertNewObjectForEntityForName("Note", inManagedObjectContext: moc) as! NSManagedObject
-        
             
-            newObject.setValue(notTextField.text, forKey: "content")
-            newObject.setValue(NSDate(), forKey: "created")
+            let catEntity = NSEntityDescription.entityForName("Category", inManagedObjectContext: moc)
             
-         ////////   //add five buttons and set category relationship
+            let request = NSFetchRequest()
+            
+            request.entity = catEntity
+            
+            if let catObjects = moc.executeFetchRequest(request, error: nil) as? [NSManagedObject] {
+                
+                
+                var newObject = NSEntityDescription.insertNewObjectForEntityForName("Note", inManagedObjectContext: moc) as! NSManagedObject
+                
+                
+                newObject.setValue(notTextField.text, forKey: "content")
+                newObject.setValue(NSDate(), forKey: "created")
+                
+                
+                let catObject = catObjects[0]
+                
+                newObject.setValue(catObject, forKey: "category")
+
+            }
+            
             
             appDelegate.saveContext()
         

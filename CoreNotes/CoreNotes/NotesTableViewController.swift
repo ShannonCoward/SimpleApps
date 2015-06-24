@@ -44,6 +44,10 @@ class NotesTableViewController: UITableViewController {
                     
                     request.entity = entity
                     
+                    let predicate = NSPredicate(format: "%K == %@", "category",catObject)
+                    
+                    request.predicate = predicate
+                    
            //////////         //add predicate filter for category
                     
                     
