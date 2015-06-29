@@ -18,8 +18,8 @@
 		044EA07D1B25D1F900C73FBB /* PixelAdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EA07C1B25D1F900C73FBB /* PixelAdventureTests.m */; };
 		044EA0881B25F07200C73FBB /* Attack.sks in Resources */ = {isa = PBXBuildFile; fileRef = 044EA0861B25F07200C73FBB /* Attack.sks */; };
 		044EA0891B25F07200C73FBB /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 044EA0871B25F07200C73FBB /* spark.png */; };
+		04B23BAA1B3F182200D449A3 /* shooterPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B23BA91B3F182200D449A3 /* shooterPic.png */; };
 		04DB16D21B271FB900FCA436 /* fireball.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04DB16D11B271FB900FCA436 /* fireball.wav */; };
-		04DB17091B27346000FCA436 /* shooterPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DB17081B27346000FCA436 /* shooterPic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,8 @@
 		044EA07C1B25D1F900C73FBB /* PixelAdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PixelAdventureTests.m; sourceTree = "<group>"; };
 		044EA0861B25F07200C73FBB /* Attack.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Attack.sks; sourceTree = "<group>"; };
 		044EA0871B25F07200C73FBB /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		04B23BA91B3F182200D449A3 /* shooterPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shooterPic.png; sourceTree = "<group>"; };
 		04DB16D11B271FB900FCA436 /* fireball.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fireball.wav; sourceTree = "<group>"; };
-		04DB17081B27346000FCA436 /* shooterPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shooterPic.png; path = Images.xcassets/shooterPic.imageset/shooterPic.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 				044EA06D1B25D1F900C73FBB /* Images.xcassets */,
 				044EA06F1B25D1F900C73FBB /* LaunchScreen.xib */,
 				044EA05C1B25D1F900C73FBB /* Info.plist */,
-				04DB17081B27346000FCA436 /* shooterPic.png */,
+				04B23BA91B3F182200D449A3 /* shooterPic.png */,
 				044EA05D1B25D1F900C73FBB /* main.m */,
 				044EA05F1B25D1F900C73FBB /* AppDelegate.h */,
 				044EA0601B25D1F900C73FBB /* AppDelegate.m */,
@@ -220,7 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				044EA0711B25D1F900C73FBB /* LaunchScreen.xib in Resources */,
-				04DB17091B27346000FCA436 /* shooterPic.png in Resources */,
+				04B23BAA1B3F182200D449A3 /* shooterPic.png in Resources */,
 				044EA0891B25F07200C73FBB /* spark.png in Resources */,
 				044EA0881B25F07200C73FBB /* Attack.sks in Resources */,
 				04DB16D21B271FB900FCA436 /* fireball.wav in Resources */,
