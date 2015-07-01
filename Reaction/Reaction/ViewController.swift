@@ -10,11 +10,25 @@ import UIKit
 import GameKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var goButton: CircleButton!
 
     @IBOutlet weak var topScoreLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.topScoreLabel.alpha = 0
+        
+        goButton.alpha = 0
+        goButton.transform = CGAffineTransformMakeScale(0.0, 0.0)
+        
+        UIView.animateWithDuration(0.4, animations: { () -> Void in
+            
+            self.goButton.alpha = 1
+            self.goButton.transform = CGAffineTransformMakeScale(1.0, 1.0)
+            
+        })
         
         GKLocalPlayer.localPlayer().authenticateHandler = { (ViewController, error) -> Void in
             
@@ -51,6 +65,12 @@ class ViewController: UIViewController {
                 leaderboard.loadScoresWithCompletionHandler({ (scores, error) -> Void in
                     
                     self.topScoreLabel.text = "\(leaderboard.localPlayerScore.value)"
+                    
+                    UIView.animateWithDuration(1.4, animations: { () -> Void in
+                        
+                        self.topScoreLabel.alpha = 1
+                    })
+                    
                     })
                 
                 }

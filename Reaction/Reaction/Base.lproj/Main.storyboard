@@ -59,6 +59,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Hje-gu-DlI"/>
                     <connections>
+                        <outlet property="goButton" destination="eui-Z4-cdf" id="gmc-V6-PAe"/>
                         <outlet property="topScoreLabel" destination="b4C-0A-gMZ" id="CmV-p3-SbL"/>
                     </connections>
                 </viewController>

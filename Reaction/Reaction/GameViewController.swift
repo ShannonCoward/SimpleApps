@@ -59,7 +59,7 @@ class GameViewController: UIViewController {
             
         }) { (finished) -> Void in
         
-            if finished { self.endGame() }
+            if finished { self.gameOver() }
             
         }
     
@@ -67,7 +67,7 @@ class GameViewController: UIViewController {
 
     func animateNewCirclesIn() {
         
-        runTimer(1.0)
+        runTimer(3.0)
         
         var  circleWidth = (view.frame.width - 120) / 2
         var  circleRadius = circleWidth / 2
@@ -91,6 +91,8 @@ class GameViewController: UIViewController {
             currentCircles.append(circle)
             
             let (dx,dy) = directions[c]
+            
+           
             
             UIView.animateWithDuration(1.0, delay: 0.0, options: UIViewAnimationOptions.AllowUserInteraction, animations: { () -> Void in
                 
@@ -117,8 +119,12 @@ class GameViewController: UIViewController {
         
             for circle in currentCircles {
                 
+                circle.choice = 4
+                
                 let distX = circle.center.x - view.center.x
                 let distY = circle.center.y - view.center.y
+                
+                 let randomAnimationSpeed = Double(arc4random_uniform(60) + 40) / 100
             
             UIView.animateWithDuration(1.0, animations: { () -> Void in
                
@@ -165,12 +171,45 @@ class GameViewController: UIViewController {
             
         } else {
         
-            endGame()
+            gameOver()
         
         }
     
     }
+    
+    func gameOver() {
+    
+    animateOldCirclesOut()
         
+        let gameOverLabel = UILabel(frame: view.frame)
+        gameOverLabel.textAlignment = .Center
+        gameOverLabel.textColor = UIColor.whiteColor()
+        gameOverLabel.text = "YOU SUCK!! PLAY AGAIN"
+        gameOverLabel.font = UIFont(name: "HelveticNeue-UltraLight", size: 80)
+        
+        gameOverLabel.alpha = 0
+        
+        view.addSubview(gameOverLabel)
+        
+        UIView.animateWithDuration(0.4, animations: { () -> Void in
+            
+            gameOverLabel.alpha = 1
+            self.scoreLabel.alpha = 0
+            
+        }) { (finished) -> Void in
+            
+            
+            UIView.animateWithDuration(2.0, animations: { () -> Void in
+                
+                gameOverLabel.alpha = 0
+                
+                }) { (finished) -> Void in
+                    
+                    self.endGame()
+                    
+            }
+        }
+    }
     
     func endGame() {
     
