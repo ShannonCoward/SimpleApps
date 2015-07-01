@@ -9,6 +9,8 @@
 import UIKit
 
 @IBDesignable class CircleButton: UIButton {
+    
+    var choice: Int!
 
     @IBInspectable var fillColor: UIColor = UIColor.whiteColor()
     

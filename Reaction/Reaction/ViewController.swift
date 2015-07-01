@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GameKit
 
 class ViewController: UIViewController {
 
