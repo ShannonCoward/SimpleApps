@@ -12,7 +12,7 @@ import GameKit
 
 class GameViewController: UIViewController {
     
-    var leaderboard: GKLeaderboard? //GAMECENTER
+   
     
     var currentScore = 0 {
     
@@ -35,7 +35,7 @@ class GameViewController: UIViewController {
         view.addSubview(timerBar)
         
         scoreLabel.textColor = UIColor.whiteColor()
-        scoreLabel.font = UIFont(name: "HelvicaNeue-Ultralight", size: 200)
+        scoreLabel.font = UIFont(name: "HelveticaNeue-Ultralight", size: 80)
         scoreLabel.text = "0"
         scoreLabel.frame.origin.y = view.frame.height - 120
         scoreLabel.frame.size.width = view.frame.width
@@ -144,6 +144,18 @@ class GameViewController: UIViewController {
         if circle.choice == currentCorrectChoice {
             
             currentScore++
+            
+            //report score to leaderboard
+            
+            let reportScore = GKScore(leaderboardIdentifier: "circles_touched")
+            
+            reportScore.value = Int64(currentScore)
+            
+            GKScore.reportScores([reportScore], withCompletionHandler: { (error) -> Void in
+                
+                println("reported")
+            
+            })
         
         currentCorrectChoice = Int(arc4random_uniform(4))
     

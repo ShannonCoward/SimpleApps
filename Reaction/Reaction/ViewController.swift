@@ -16,8 +16,50 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        GKLocalPlayer.localPlayer().authenticateHandler = { (ViewController, error) -> Void in
+            
+            if ViewController != nil {
+            
+                self.presentViewController(ViewController, animated: true, completion: nil)
+                
+            } else {
+                
+                    println(GKLocalPlayer.localPlayer().authenticated)
+            
+                self.loadSore()
+            }
+
+        }////////////////GAME CENTER//////////////
     }
 
+    
+    override func viewWillAppear(animated: Bool) {
+        self.loadSore()
+        
+    }
+    
+    func loadSore(){
+        
+        if GKLocalPlayer.localPlayer().authenticated == false { return }
+    
+        GKLeaderboard.loadLeaderboardsWithCompletionHandler { (leaderboards, error) -> Void in
+            
+            for leaderboard in leaderboards as! [GKLeaderboard] {
+                
+                if leaderboard.identifier == "circles_touched" {
+                
+                leaderboard.loadScoresWithCompletionHandler({ (scores, error) -> Void in
+                    
+                    self.topScoreLabel.text = "\(leaderboard.localPlayerScore.value)"
+                    })
+                
+                }
+            
+            }
+        }
+    
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
