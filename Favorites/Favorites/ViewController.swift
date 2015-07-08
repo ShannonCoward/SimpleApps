@@ -61,9 +61,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             let query = PFQuery(className: "user")
             
-            query.delete("user")
+            query.delete("user")  /// Do stuff with the user
             
-            // Do stuff with the user
         } else {
             // Show the signup or login screen
         }
