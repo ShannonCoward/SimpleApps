@@ -88,9 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				0488687B1B0240250044B9DA /* FriendsTableViewController.swift */,
-				048868871B038F200044B9DA /* RepoTableViewCell.swift */,
-				048868891B038F5F0044B9DA /* ReposTableViewController.swift */,
 				048868811B0284EE0044B9DA /* ProfilePicTableViewCell.swift */,
+				048868891B038F5F0044B9DA /* ReposTableViewController.swift */,
+				048868871B038F200044B9DA /* RepoTableViewCell.swift */,
 				0488688B1B0397B10044B9DA /* GithubRequest.swift */,
 				0488688D1B03AC270044B9DA /* AddFriendViewController.swift */,
 				0488685F1B0239160044B9DA /* Main.storyboard */,
